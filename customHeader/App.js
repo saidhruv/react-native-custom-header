@@ -1,3 +1,13 @@
+/**
+ * This is a custom header created for a
+ * user experience concept being developed.
+ *
+ * A note to you, Developer: Though open source,
+ * please include a credit line in your app if
+ * you are using this. That's all I ask.
+ * - Sai Dhruv
+ */
+
 import React, { Component } from "react";
 import {
   Animated,
@@ -6,9 +16,7 @@ import {
   StyleSheet,
   Text,
   View,
-  Dimensions,
-  PanResponder,
-  NativeModules
+  Dimensions
 } from "react-native";
 
 var deviceHeight = Dimensions.get("window").height;
@@ -23,8 +31,7 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-      scrollY: new Animated.Value(0),
-      scrollX: new Animated.Value(0)
+      scrollY: new Animated.Value(0)
     };
   }
 
